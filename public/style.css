@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* navbar style*/
+.circle-container{
+    display: none;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+    padding-bottom: 60px;
+    padding-top: 0px;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-bottom-style: solid;
+    border-color: blue;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    
+}
+.secondnavbar{
+    display: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.navbar{
+    float: right;
+    margin: 0px;
+    height: 50px;
+}
+nav ul{
+    float: right;
+    display: flex;
+    margin: 0px;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.navbar ul li{
+    text-align: center;
+    list-style-type: none;
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.navbar ul li a:hover{
+ color: silver;
+ 
+}
+ul li ul{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+ul li:hover .first{
+    display: block;
+    color: white;
+    
+    
+}
+.first{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+    display: none;
+    background-color: white;
+
+} /* end of navbar and start of landing page*/
+main{
+    width: 100%;
+
+}
+article{
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: white;
+}
+.container4{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    max-width: 100%;
+    padding: 50px 200px 30px 200px;
+}
+article div{
+    width: 100%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+article div h1{
+    font-size:70px;
+}
+article div p{
+    font-size: 30px;
+    line-height: 1.5rem;
+    color: rgb(128, 123, 123);
+
+}
+article div button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    border-style: none;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+button h5{
+    font-size:x-large;
+    margin: 0px;
+}
+button:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+/* start of container  grid*/
+.text{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+section{
+    width: 100%;
+
+}
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 80%;
+    text-align: center;
+    grid-gap: 50px;
+    position: relative;
+    margin-left: 200px;
+}
+.container1 div{
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px silver;
+    border-radius: 5px;
+    padding:0px 5px 0px 5px;
+
+}
+.container1 div:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.image1{
+    width: 100%;
+    height: 60%;
+    
+}
+.container2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px;
+}
+.container2 div{
+ width: 80%;
+ height: 50vh;
+ margin: 10px;
+}
+.container2 div div{
+    height: 50vh;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    width: 500px;
+
+}
+.image3{
+    height: 50vh;
+    width: 100%;
+    border-radius: 10px;
+}
+.stories{
+    background-color: rgb(223, 223, 223);
+    margin-top: 100px;
+    padding: 20px 200px 20px 200px;
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    padding: 100px 250px 0px 250px;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 30vh;
+}
+.container3 div{
+    margin: 0px 100px 0px 100px;
+    height: 100%;
+}
+.container3 div p{
+    font-size: xx-large;
+    color: darkblue;
+}
+.container3 div ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+}
+.container3 div ul li{
+    line-height: 2rem;
+}
+.container3 div ul li a{
+    font-size: x-large;
+}
+.container3 div ul li a:hover{
+    color: darkblue;
+}
+.container3 div ul li:hover{
+    transform: scale(1.5);
+    transition: 0.4s;
+    line-height: 2rem;
+}
+/* signup form */
+#bodyform{
+    max-width: 100%;
+    max-height: 100vh;
+    padding: 50px;
+    background-color: white;
+}
+#logo-container{
+    text-align: center;
+}
+.logo1{
+    height: 150px;
+    width: 150px;
+    padding-bottom: 60px;
+    padding-top: 0px;
+}
+#form_container{
+    text-align: center;
+    height: 80vh;
+    max-width: 50%;
+    margin-top: 100px;
+
+}
+form{
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #888888;
+    margin-top: 60px;
+    border-radius: 10px;
+    height: 80vh;
+    width: 50%;
+    text-align: center;
+    padding-top: 100px;
+    margin-left: 450px;
+}
+.button{
+    background-color: blue;
+    text-transform: uppercase;
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: transform 0.9s;
+
+}
+
+input {
+    width:60%;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: x-large;
+    border-style:solid;
+
+}
+form p{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* login form */
+
+.loginform{
+    width: 900px;
+}
+/*step one */
+select{
+    width: 50%;
+    margin: 40px;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+form button{
+    width: 50%;
+    height: 50px;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+/* step two*/
+#textarea{
+ height: 300px;
+}
+@media (max-width:1600px) {
+    nav{
+        width: 100%;
+        height: 90px;
+        padding-left: 100px;
+        padding-right: 100px;
+        border-bottom-style: solid;
+        border-color: blue;
+        position: fixed;
+        background-color: white;
+        z-index: 2;
+        
+    }
+    .container4{
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        max-width: 100%;
+        padding: 50px 100px 30px 100px;
+    }
+    .container1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        text-align: center;
+        grid-gap: 50px;
+        position: relative;
+        margin-left: 150px;
+    }
+}
+@media (max-width:1400px) {
+    nav{
+        width: 100%;
+        height: 90px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-bottom-style: solid;
+        border-color: blue;
+        position: fixed;
+        background-color: white;
+        z-index: 2;
+        
+    }
+    .container4{
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        max-width: 100%;
+        padding: 50px 25px 30px 25px;
+    }
+}
+@media (max-width:1300px) {
+    body{
+        background-color: thistle;
+        overflow-x: hidden;
+    }
+    nav{
+        width: 100%;
+        height: 112px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-bottom-style: solid;
+        border-color: blue;
+        position: fixed;
+        background-color: white;
+        padding-left: 40%;
+    }
+    
+    nav ul{
+        display: none;
+    }
+.secondnavbar{
+    display: block;
+    position: fixed;
+    top: 700px;
+    left: 10px;
+    z-index: -1;
+}
+.container0 {
+    background-color: aliceblue;
+      transform-origin:top left;
+      transition: transform  0.5s linear;
+      width: 100vw;
+      min-height: 100vh;
+}
+.container0.show-nav {
+    transform: rotate(-20deg);
+
+}
+.circle-container{
+    position: fixed;
+    top:-70px;
+    left: -100px;
+    display:block;
+}
+.circle{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+
+}
+.circle button{
+    position:absolute;
+    top: 100px;
+    left: 140px;
+    height: 50px;
+    border:0;
+    font-size: 26px;
+    color:rgb(8, 8, 8);
+    cursor: pointer;
+    background-color: transparent;
+}
+.container0.show-nav .circle{
+    transform: rotate(-70deg);
+}
+.container0.show-nav + .secondnavbar li{
+    transform: translateX(0deg);
+    transition-delay:0.3s;
+}
+.secondnavbar  ul li{
+    color: aliceblue; 
+    margin: 20px;
+    text-transform: capitalize; 
+    transition: transform 0.4s ease-in; 
+    list-style-type: none;
+    padding: 0px;
+   }
+   
+   .circle button:focus{
+    outline: none;
+}
+.circle button#open{
+    left: 70%;
+}
+.circle button#close{
+    top: 70%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+}
