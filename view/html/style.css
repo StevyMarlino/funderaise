@@ -9,6 +9,9 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* navbar style*/
+.circle-container{
+    display: none;
+}
 .logo{
     height: 150px;
     width: 150px;
@@ -143,12 +146,12 @@ button:hover{
 }
 section{
     width: 100%;
-    border: solid;
+
 }
 .container1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 80%;
+    max-width: 80%;
     text-align: center;
     grid-gap: 50px;
     position: relative;
@@ -239,7 +242,88 @@ footer{
     transition: 0.4s;
     line-height: 2rem;
 }
+/* signup form */
+#bodyform{
+    max-width: 100%;
+    max-height: 100vh;
+    padding: 50px;
+    background-color: white;
+}
+#logo-container{
+    text-align: center;
+}
+.logo1{
+    height: 150px;
+    width: 150px;
+    padding-bottom: 60px;
+    padding-top: 0px;
+}
+#form_container{
+    text-align: center;
+    height: 80vh;
+    max-width: 50%;
+    margin-top: 100px;
 
+}
+form{
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #888888;
+    margin-top: 60px;
+    border-radius: 10px;
+    height: 80vh;
+    width: 50%;
+    text-align: center;
+    padding-top: 100px;
+    margin-left: 450px;
+}
+.button{
+    background-color: blue;
+    text-transform: uppercase;
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: transform 0.9s;
+
+}
+
+input {
+    width:60%;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: x-large;
+    border-style:solid;
+
+}
+form p{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* login form */
+
+.loginform{
+    width: 900px;
+}
+/*step one */
+select{
+    width: 50%;
+    margin: 40px;
+    height: 50px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+form button{
+    width: 50%;
+    height: 50px;
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+/* step two*/
+#textarea{
+ height: 300px;
+}
 @media (max-width:1600px) {
     nav{
         width: 100%;
@@ -331,8 +415,9 @@ footer{
 }
 .circle-container{
     position: fixed;
-    top:-80px;
-    left: -100px
+    top:-70px;
+    left: -100px;
+    display:block;
 }
 .circle{
     background-color: blue;
@@ -344,9 +429,9 @@ footer{
 
 }
 .circle button{
-    position:fixed;
-    top: 20px;
-    left: 40px;
+    position:absolute;
+    top: 100px;
+    left: 140px;
     height: 50px;
     border:0;
     font-size: 26px;
@@ -354,15 +439,32 @@ footer{
     cursor: pointer;
     background-color: transparent;
 }
+.container0.show-nav .circle{
+    transform: rotate(-70deg);
+}
+.container0.show-nav + .secondnavbar li{
+    transform: translateX(0deg);
+    transition-delay:0.3s;
+}
 .secondnavbar  ul li{
     color: aliceblue; 
     margin: 20px;
-    text-transform: capitalize;  
-    transform: translateX(40%);
+    text-transform: capitalize; 
     transition: transform 0.4s ease-in; 
     list-style-type: none;
     padding: 0px;
    }
-
+   
+   .circle button:focus{
+    outline: none;
+}
+.circle button#open{
+    left: 70%;
+}
+.circle button#close{
+    top: 70%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
 
 }
