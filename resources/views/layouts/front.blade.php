@@ -12,14 +12,14 @@
     <nav>
         <div class="container">
             <div>
-               <img src="logo.png" class="logo">
+              <a href=" {{ url('/') }}"> <img src="logo.png" class="logo"></a>
             </div>
             <div class="navbar">
                 <ul>
                     <li> <a href="#" >Discover</a>
                     <div class="first">
                         <ul>
-                            <li><a href="#">Fundraiser</a></li>
+                            <li><a href="{{ route('fundraiser') }}">Fundraiser</a></li>
                             <li><a href="#">Success stories</a></li>
                         </ul>
                     </div>
@@ -27,8 +27,8 @@
                     <li><a href="#"> Fundraiser for</a>
                         <div class="first">
                             <ul>
-                                <li><a href="#">Education</a></li>
-                                <li><a href="#">Medical</a></li>
+                                <li><a href=" {{ route('education') }}">Education</a></li>
+                                <li><a href=" {{ route('medical') }}">Medical</a></li>
                         
                             </ul>
                         </div>

@@ -10,7 +10,8 @@
                 <p>Get help. Give kindness.</p>
             </div>
             <div>
-                <button>
+            <form id="indexform" action=" {{ url('step1') }}">
+                <button type="submit">
                     <h5>Start a funding</h5>
                 </button>
             </div>
