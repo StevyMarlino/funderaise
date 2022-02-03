@@ -17,9 +17,9 @@
         
                 <div>
                         <img src="{{ asset('img/background1.jpg') }}" class="image1">
-                        <h2>Freedom Convoy 2022</h2>
-                        <p>To our Fellow Canadians,  
-                        the time for political over reach is over.  </p>
+                        <h2> {{ $funderaise->title }}</h2>
+                        <p> {{ $funderaise->description }}</p>
+                        <p> {{ number_format($funderaise->number)  }} FCFA</p>
                 </div>
         
     @empty
