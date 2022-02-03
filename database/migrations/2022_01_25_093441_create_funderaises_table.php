@@ -14,7 +14,16 @@ class CreateFunderaisesTable extends Migration
     public function up()
     {
         Schema::create('funderaises', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('region');
+            $table->unsignedBigInteger('user_id');
+            $table->string('category');
+            $table->string('title');
+            $table->text('description');
+            $table->string('number');
+            $table->string('file');
+
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

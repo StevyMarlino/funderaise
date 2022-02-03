@@ -13,16 +13,16 @@
     </nav>
     <div id="bodyform">
     <div id="form_container ">
-    <form>
+   
         <p>STEP ONE</p>
-        <form>
+        <form action=" {{ route('step-1') }}" method="POST">
+          @csrf
                 <div class="input_field select_option">
-                  <select>
+                  <select name="region">
                     <option>Select a Region</option>
-                    <option>YAOUNDE</option>
+                    <option value="YAOUNDE">YAOUNDE</option>
                     <option>DUALA</option>
                     <option>BAMENDA</option>
-                    <option></option>
                     <option>YAOUNDE</option>
                     <option>DUALA</option>
                     <option>YAOUNDE</option>
@@ -33,17 +33,17 @@
                   <div class="select_arrow"></div>
                 </div>
                 <div class="input_field select_option">
-                    <select>
+                    <select name="category">
                       <option>Select your category</option>
-                      <option>Education</option>
+                      <option value="Education">Education</option>
                       <option>Medical</option>
                     </select>
                     <div class="select_arrow"></div>
                   </div>
-            <button>
+            <button type="submit">
               NEXT
             </button>
-          </form>
+          
       </form>
     </div>
     </div>

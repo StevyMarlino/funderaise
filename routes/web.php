@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
@@ -26,5 +27,19 @@ Route::get('/medical' , [App\Http\Controllers\MedicalController::class,'index'])
 Route::get('/fundraiser' , [App\Http\Controllers\FundraiserController::class,'index'])->name('fundraiser');
 
 
-Route::get('/step1' , [App\Http\Controllers\Step1Controller::class,'index'])->name('step1');
 
+
+Route::middleware('auth')->group(function(){
+
+    Route::get('/step1' , [App\Http\Controllers\Step1Controller::class,'step1'])->name('step1');
+    Route::get('/step2' , [App\Http\Controllers\Step1Controller::class,'step2'])->name('step2');
+    Route::get('/step3' , [App\Http\Controllers\Step1Controller::class,'step3'])->name('step3');
+
+    Route::post('/post-step-1',[App\Http\Controllers\Step1Controller::class,'storeStep1'])->name('step-1');
+
+    Route::post('/post-step-2',[App\Http\Controllers\Step1Controller::class,'storeStep2'])->name('step-2');
+
+    Route::post('/post-step-3',[App\Http\Controllers\Step1Controller::class,'storeStep3'])->name('step-3');
+
+
+});
