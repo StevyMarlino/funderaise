@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Funderaise;
 
 class MedicalController extends Controller
 {
     public function index()
     {
-        return view('html.medical');
+        $data = [
+            'medical' => Funderaise::all()->where('category','Medical')
+        ];
+        return view('html.Medical', $data);
        
     }
 }

@@ -147,6 +147,34 @@ button:hover{
     transform: scale(1.3);
     transition: 0.5s;
 }
+#dashbutton{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 2fr;
+
+}
+#dashbutton div{
+    margin-right: 50px;
+}
+#dashbutton1{
+    height: 50px;
+    width: 200px;
+    margin: 0%;
+    padding: 0px;
+    box-shadow: none;
+    background-color:transparent;
+    float: right;
+}
+#dashbutton1 button{
+    margin: 0%;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px blue;
+}
+.dashtext{
+    font-size: x-large;
+}
 /* start of container  grid*/
 .text{
     text-align: center;

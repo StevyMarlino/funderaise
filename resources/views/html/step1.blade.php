@@ -20,15 +20,16 @@
                 <div class="input_field select_option">
                   <select name="region">
                     <option>Select a Region</option>
-                    <option value="YAOUNDE">YAOUNDE</option>
-                    <option>DUALA</option>
-                    <option>BAMENDA</option>
-                    <option>YAOUNDE</option>
-                    <option>DUALA</option>
-                    <option>YAOUNDE</option>
-                    <option>DUALA</option>
-                    <option>YAOUNDE</option>
-                    <option>DUALA</option>
+                    <option value="Ngaoundéré">Ngaoundéré</option>
+                    <option value="Yaoundé" >Yaoundé</option>
+                    <option value="Bertoua" >Bertoua</option>
+                    <option value="Maroua" >Maroua</option>
+                    <option value="Douala">Douala</option>
+                    <option value="Garoua">Garoua</option>
+                    <option value="	Bamenda">	Bamenda </option>
+                    <option value="Ebolowa">Ebolowa</option>
+                    <option value="	Buea">	Buea</option>
+                    <option value="Bafoussam" >Bafoussam</option>
                   </select>
                   <div class="select_arrow"></div>
                 </div>
@@ -36,7 +37,7 @@
                     <select name="category">
                       <option>Select your category</option>
                       <option value="Education">Education</option>
-                      <option>Medical</option>
+                      <option value="Medical">Medical</option>
                     </select>
                     <div class="select_arrow"></div>
                   </div>

@@ -62,7 +62,7 @@ class Step1Controller extends Controller
        $funderaise->category = $request->session()->get('category');
        $funderaise->title = $request->session()->get('title');
        $funderaise->number = $request->number;
-       $funderaise->file = $request->file;
+       $funderaise->file = 'storage/'.$request->file('file')->store('file','public');
 
        $funderaise->user_id = auth()->user()->id;
        $funderaise->save();

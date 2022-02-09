@@ -3,12 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Funderaise;
 
 class FundraiserController extends Controller
 {
     public function index()
     {
-        return view('html.medical');
-       
+        $data = [
+            'fundraiser' => Funderaise::all()
+        ];
+        return view('fundraiser', $data);
+        
     }
 }

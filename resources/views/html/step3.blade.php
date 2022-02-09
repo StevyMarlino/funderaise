@@ -15,7 +15,7 @@
     <div id="form_container ">
 
         <p>STEP THREE</p>
-        <form action="{{ route('step-3')}} " method="POST">
+        <form action="{{ route('step-3')}} " method="POST" enctype='multipart/form-data'>
           @csrf
             <div class="row clearfix">
                 <div class="col_half">

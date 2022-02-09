@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/',[App\Http\Controllers\HomeController::class,'index']);
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -27,7 +29,7 @@ Route::get('/medical' , [App\Http\Controllers\MedicalController::class,'index'])
 Route::get('/fundraiser' , [App\Http\Controllers\FundraiserController::class,'index'])->name('fundraiser');
 
 
-
+Route::get('/details/{id}',[App\Http\Controllers\HomeController::class,'details'])->name('details');
 
 Route::middleware('auth')->group(function(){
 
@@ -40,6 +42,5 @@ Route::middleware('auth')->group(function(){
     Route::post('/post-step-2',[App\Http\Controllers\Step1Controller::class,'storeStep2'])->name('step-2');
 
     Route::post('/post-step-3',[App\Http\Controllers\Step1Controller::class,'storeStep3'])->name('step-3');
-
 
 });
