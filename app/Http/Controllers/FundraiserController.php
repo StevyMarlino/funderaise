@@ -12,7 +12,7 @@ class FundraiserController extends Controller
         $data = [
             'fundraiser' => Funderaise::all()
         ];
-        return view('fundraiser', $data);
+        return view('html.fundraiser', $data);
         
     }
 }

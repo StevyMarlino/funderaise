@@ -1,0 +1,64 @@
+#dashbutton{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 2fr;
+
+}
+#dashbutton div{
+    margin-right: 50px;
+}
+#dashbutton1{
+    height: 50px;
+    width: 200px;
+    margin: 0%;
+    padding: 0px;
+    box-shadow: none;
+    background-color:transparent;
+    float: right;
+}
+#dashbutton1 button{
+    margin: 0%;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px blue;
+}
+.dashtext{
+    font-size: x-large;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 80%;
+    text-align: center;
+    grid-gap: 50px;
+    position: relative;
+    margin-left: 200px;
+}
+.container1 a{
+    text-decoration: none;
+    color: black;
+}
+.container1 div{
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px silver;
+    border-radius: 5px;
+    padding:0px 5px 0px 5px;
+
+}
+.container1 div:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.image1{
+    width: 100%;
+    height: 60%;
+    
+}
+#textlength{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}

@@ -194,12 +194,17 @@ section{
     position: relative;
     margin-left: 200px;
 }
+.container1 a{
+    text-decoration: none;
+    color: black;
+}
 .container1 div{
     width: 100%;
     background-color: white;
     box-shadow: 5px 5px 5px 5px silver;
     border-radius: 5px;
     padding:0px 5px 0px 5px;
+    text-overflow: ellipsis;
 
 }
 .container1 div:hover{
@@ -385,10 +390,17 @@ span{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    padding: 50px;
-    padding: 200px 
+    padding: 10px;
+    
 }
+.container-flex a{
+   text-decoration: none;
+   color: black;
+   text-overflow: ellipsis;
+}
+
 .container-flex div{
+    width: 500px;
     margin: 50px;
     height: 500px;
     border-radius: 10px;
@@ -397,6 +409,12 @@ span{
 
 .container-flex div:hover{
     transform: scale(1.1);
+}
+#textlength{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 }
 
 @media (max-width:1600px) {

@@ -10,7 +10,7 @@ class HomeController extends Controller
     public function index()
     {
         $data = [
-            'index' => Funderaise::all()
+            'index' => Funderaise::paginate(6)
         ];
         return view('index', $data);
        

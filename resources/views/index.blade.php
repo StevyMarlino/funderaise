@@ -25,19 +25,20 @@
         <section>
             <p class="text">Top Fundraiser.</p>
            <div class="container1">
-               
-           @forelse($index as $fund)
-           <div>
-                    <img src="{{ asset('img/background1.jpg') }}" class="image1">
-                    <h2>Freedom Convoy 2022</h2>
-                    <p>To our Fellow Canadians,  
-                    the time for political over reach is over.  </p>
-               </div>
-               @empty
+           @forelse($index as $funderaise)
+    <a href="{{ route('details',$funderaise->id) }}" >
+                <div>
+             <img src="{{ asset($funderaise->file)}}" class="image1">
+                        
+                        <h2> {{ $funderaise->title }}</h2>
+                        <p id="textlength"> {{ $funderaise->description }}</p>
+                        <p> {{ number_format($funderaise->number)  }} FCFA</p>
+                </div>
+    @empty
     No data 
     @endforelse
-               
-           </div>
+    </div>
+
         </section>
     </main>
         <div class="stories">

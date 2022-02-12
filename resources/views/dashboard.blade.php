@@ -27,7 +27,7 @@
              <img src="{{ asset($funderaise->file)}}" class="image1">
                         
                         <h2> {{ $funderaise->title }}</h2>
-                        <p> {{ $funderaise->description }}</p>
+                        <p id="textlength"> {{ $funderaise->description }}</p>
                         <p> {{ number_format($funderaise->number)  }} FCFA</p>
                 </div>
 </a>

@@ -25,7 +25,7 @@
                 </div>
                 <div class="col_half">
                   <div> <span>DESCRIPTION: </span>
-                    <textarea name="description" value="description" >
+                    <textarea name="description" value="description">
                     </textarea>
                   </div>
                 </div>
