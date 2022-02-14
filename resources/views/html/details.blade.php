@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/detailstyle.css') }}">
+
     <title>step one</title>
 </head>
 <body>
@@ -31,14 +32,20 @@
 </div>
 <div class="container2">
     <div>
-   <span> {{ $details->number}} of {{ $details->number}}</span>
+   <span> {{ $details->amount_received}} of {{ $details->number}}</span>
     </div>
     <div class="container3">
       <div>
-        <button>DONATE</button>
+        <form action="{{ route('payamount')}}" method="POST">
+          @csrf
+          <input type="hidden" name="projet_id" value="{{ $details->id }}" />
+          <button type="submit">DONATE</button>
+        </form>
 </div>
 <div>
+  <form>
         <button>SHARE</button>
+</form>
 </div>
 </div>
 

@@ -17,6 +17,7 @@ class CreateFunderaisesTable extends Migration
             $table->bigIncrements('id');
             $table->string('region');
             $table->unsignedBigInteger('user_id');
+            $table->integer('amount_received')->default(0);
             $table->string('category');
             $table->string('title');
             $table->text('description');

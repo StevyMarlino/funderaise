@@ -23,6 +23,8 @@ Route::get('/education',[App\Http\Controllers\EducationController::class,'index'
 Route::get('/medical' , [App\Http\Controllers\MedicalController::class,'index'])->name('medical');
 Route::get('/fundraiser' , [App\Http\Controllers\FundraiserController::class,'index'])->name('fundraiser');
 
+Route::post('/payamount' , [App\Http\Controllers\PayamountController::class,'index'])->name('payamount');
+
 
 Route::get('/details/{id}',[App\Http\Controllers\HomeController::class,'details'])->name('details');
 
@@ -39,6 +41,12 @@ Route::middleware('auth:sanctum')->group(function(){
 
     Route::post('/post-step-2',[App\Http\Controllers\Step1Controller::class,'storeStep2'])->name('step-2');
 
-    Route::post('/post-step-3',[App\Http\Controllers\Step1Controller::class,'storeStep3'])->name('step-3');
+    Route::post('/post-step-3',[App\Http\Controllers\Step1Controller::class,'storeStep3'])->name('step-3'); 
 
 });
+
+Route::get('/ipn',[App\Http\Controllers\PaymentController::class,'ipn']);
+
+Route::get('/cancelUrl',[App\Http\Controllers\PaymentController::class,'cancelUrl']);
+Route::get('/successUrl',[App\Http\Controllers\PaymentController::class,'successUrl']);
+Route::post('/pay',[App\Http\Controllers\ApiController::class,'requestCurl'])->name('pay');
