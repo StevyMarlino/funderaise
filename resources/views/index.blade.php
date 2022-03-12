@@ -40,7 +40,7 @@
     </div>
 
         </section>
-    </main>
+    
         <div class="stories">
             <p class="text">Success stories</p>
             <div class="container2">
@@ -57,7 +57,8 @@
                 </div>
             </div>
         </div>
-        <div class="secondnavbar">
+</main>
+<div class="secondnavbar">
             <ul>
                 <li> <a href="#" >Discover</a>
                 <div class="first">

@@ -15,7 +15,7 @@ class ApiController extends Controller
             'amount' => $request->amount,
             'currency_code' => 'XAF',
             'lang' => 'en',
-            'item_ref' => rand(4,7),
+            'item_ref' => rand(1,700),
             'item_name' => 'DONATION SERVICES',
             'email' => auth()->user()->email,
             //'phone' => '+237671326486',

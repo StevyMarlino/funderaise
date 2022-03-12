@@ -45,7 +45,7 @@
                 <button id="open">
                     <i class="bi bi-list"></i>
                 </button>
-                <button id="close">
+                <button id="close" class="hidden">
                     <i class="bi bi-x-lg"></i>
                 </button>
             </div>

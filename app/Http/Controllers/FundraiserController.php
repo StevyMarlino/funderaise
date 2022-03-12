@@ -10,7 +10,7 @@ class FundraiserController extends Controller
     public function index()
     {
         $data = [
-            'fundraiser' => Funderaise::all()
+            'fundraiser' => Funderaise::all()->where('active',1)
         ];
         return view('html.fundraiser', $data);
         

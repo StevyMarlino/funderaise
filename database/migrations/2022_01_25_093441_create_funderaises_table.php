@@ -23,6 +23,7 @@ class CreateFunderaisesTable extends Migration
             $table->text('description');
             $table->string('number');
             $table->string('file');
+            $table->boolean('active')->default(false);
 
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

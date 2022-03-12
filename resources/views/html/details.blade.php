@@ -26,8 +26,10 @@
 
 <h1>COMMENTS</h1>
 <div id="user">
-  <h2>USer Name</h2>
-  <p>Amount </p>
+  @foreach($donations as $donation)
+    <h2>Name : {{ $donation->name }}</h2>
+    <p>Amount: {{ $donation->amount }}</p>
+  @endforeach
   <div>
 </div>
 <div class="container2">

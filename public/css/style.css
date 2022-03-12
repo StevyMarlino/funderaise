@@ -519,7 +519,7 @@ span{
     padding: 80px 10px 30px 10px;
 } 
     nav ul{
-        display: none;
+        display:none;
     }
 .secondnavbar{
     display: block;
@@ -570,6 +570,9 @@ article div h1{
     transform: rotate(-20deg);
 
 }
+.hidden{
+    display: none;
+}
 .circle-container{
     position: fixed;
     top:-70px;
@@ -611,21 +614,4 @@ article div h1{
     list-style-type: none;
     padding: 0px;
    }
-   
-   .circle button:focus{
-    outline: none;
-}
-.circle button#open{
-    left: 70%;
-}
-.circle button#close{
-    top: 70%;
-    transform: rotate(90deg);
-    transform-origin: top left;
-}
-
-}
-
-@media (max-width:1000px) {
-    
 }
